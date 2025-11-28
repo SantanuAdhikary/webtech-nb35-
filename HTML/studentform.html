@@ -10,23 +10,27 @@
     
     <h1> student form </h1>
 
-    <form action="">
+    <form action="" method="" autocomplete="off">
         
-        <label for="sn">Student name</label>
-        <input type="text" id="sn" placeholder="enter your name" name="sname" value="" >                 <br> <br>
+       <fieldset>
+
+        <legend> student information </legend>
+           
+             <label for="sn">Student name</label>
+        <input type="text" id="sn" placeholder="enter your name" name="sname" value="" required>                 <br> <br>
 
         <label for="ph">phone number</label>
-        <input type="text" id="ph" placeholder="enter your phone number" name="phoneNumber">                <br> <br>
+        <input type="text" id="ph" placeholder="enter your phone number" name="phoneNumber" maxlength="10">                <br> <br>
 
 
         <label for="pass">enter password</label>
-        <input type="password" name="spass" id="pass" placeholder="enter your password">                           <br> <br>
+        <input type="password" name="spass" id="pass" placeholder="enter your password" minlength="5">                           <br> <br>
 
         <label for="age">student age </label>
         <input type="number" name="age" id="age" placeholder="enter your age">  <br> <br>
 
         <label for="semail">student email</label>
-        <input type="email" name="semail" id="semail" placeholder="enter your email"> <br> <br>
+        <input type="email" name="semail" id="semail" placeholder="enter your email" value="student@gmail.com" readonly> <br> <br>
 
         <label for="">Subjects </label>   <br> <br>
 
@@ -50,8 +54,29 @@
          <label for="o">Others</label>
          <input type="radio" name="gender" id="o" value="others">  <br><br>
 
+         <label for="address">enter your address</label>  <br> <br>
+
+         <textarea name="address" id="address" placeholder="enter your address" rows="10" cols="100" ></textarea>  <br> <br>
+
+         <label for="">Date Of Birth</label>
+         <input type="date" name="dob" id="">   <br><br>
+
+         <label for="">select course </label>  <br><br>
+
+          <select name="course" id="">
+             <option value="javafullstack">java fullstack</option>
+             <option value="pythonfullstack">python fullstack</option>
+             <option value="mern">Mern stack</option>
+          </select>
+
+
+        
+          <br><br>
         <button type="submit">signup</button>
         <button type="reset"> reset </button>
+
+       </fieldset>
+        
     </form>
 
 
