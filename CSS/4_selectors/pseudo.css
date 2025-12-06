@@ -1,0 +1,131 @@
+
+.box1{
+
+    background-color: cadetblue;
+}
+
+.box1 > p{
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.box1 > h2{
+    text-align: center;
+    text-transform: capitalize;
+    color:white;
+    letter-spacing: 3px;
+}
+
+.box1 > button{
+    background-color: black;
+    color:white;
+    cursor: pointer;
+}
+
+.box1 > button:hover{
+    background-color: orange;
+    font-size: 18px;
+}
+
+
+.box1 > button:active{
+    background-color: green;
+}
+
+
+.box1 > ol > li{
+    font-size: 18px;
+    color:white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+.box1 > ol > li:nth-child(4)
+{
+  color:red;
+}
+.box1 > ol > li:nth-child(2n )
+{
+    background-color: green;
+
+}
+
+.box1 > ol > li:nth-child(2n + 1)
+{
+    background-color: yellow;
+}
+
+
+.box2 > p:nth-child(2){
+    background-color: red;
+}
+
+.box2 > h1:nth-child(4)
+{
+  background-color: green;
+}
+
+.box1 > ol > li:hover{
+    background-color: orangered;
+}
+
+
+
+
+.box3 > h1{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.box3 > p{
+    text-indent: 100px;
+    
+}
+
+
+.box3 > p::first-letter{
+    font-size: 30px;
+    font-style: italic;
+}
+
+.box3 > p::first-line{
+    font-weight: bold;
+}
+
+.box3 > h1::after{
+
+    content: "***";
+
+    color:red;
+}
+
+.box3 > h1::before{
+    content:"$$$";
+
+    color:green;
+}
+
+
+
+
+.box3 > p::selection{
+    background-color: green;
+}
+
+
+
+.box3 > ul > li::marker{
+    color:red;
+}
+
+
+.box3 > ul > li:nth-child(2n)::marker
+{
+   color:green;
+}
+
+form > input[type="password"]{
+    background-color: red;
+}

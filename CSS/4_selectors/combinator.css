@@ -1,0 +1,56 @@
+
+.card1{
+    background-color: skyblue;
+    height: 200px;
+    width: 300px;
+}
+
+.card2{
+    background-color: blueviolet;
+    height: 200px;
+    width: 300px;
+}
+
+
+.card1 h1{
+    color:green;
+}
+
+.card2 h1{
+
+    color:white;
+    text-align: center;
+}
+
+
+.card3{
+    height: 350px;
+    width: 400px;
+    background-color: yellowgreen;
+}
+
+.card3 .box{
+
+    height: 180px;
+    width: 300px;
+    background-color: brown;
+}
+
+.card3 > h2{
+    color:yellow
+}
+
+.card3 > .box > h2{
+    color:white;
+    text-align: center;
+    text-decoration: underline;
+}
+
+ul > #l4{
+    font-size: 25px;
+}
+
+
+ul > #l4 ~ li{
+    background-color: green;
+}
