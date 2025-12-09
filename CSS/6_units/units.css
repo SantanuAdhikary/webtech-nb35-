@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.box1{
+    background-color: skyblue;
+    height: 100vh;
+    width: 80vw;
+}
+
+.box2{
+    background-color: red;
+    height: 200px;
+    width: 500px;
+}
+
+.box2 > .box3{
+    background-color: yellow;
+    /* height: 150px;
+    width: 200px; */
+
+    height: 50%;
+    width: 70%;
+}
+
+.circle{
+    height: 400px;
+    width: 400px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+
+
+.box4{
+    background-color: blueviolet;
+    height: 400px;
+    padding-left: 40px;
+    margin-left: 20px;
+
+    /* font-size: 25px; */
+    font-size: 2em;
+
+}
+
+.box4 > .box5{
+    height: 60%;
+    background-color: yellow;
+    width: 70%;
+    font-size: 2rem;
+}
