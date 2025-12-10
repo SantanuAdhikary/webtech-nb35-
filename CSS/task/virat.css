@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card{
+
+    background-color: orangered;
+    width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 3px 4px 6px black;
+}
+
+.card > img{
+    height: 100px;
+    width: 100px;
+    border: 3px solid green;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.card > h2{
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    color:white;
+    text-shadow: 2px 2px 3px black;
+    margin-bottom: 10px;
+}
+
+.card > p:nth-child(3)
+{
+    font-size: 18px;
+    letter-spacing: 1.3px;
+    color:white;
+    text-shadow: 2px 2px 3px black;
+    margin-bottom: 10px;
+}
+
+.card > p:nth-child(4)
+{
+    font-style: italic;
+    color:white;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px black;
+    letter-spacing: 1.2px;
+    margin-bottom: 10px;
+}
+
+.card > button{
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: orange;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    color:white;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+
+    box-shadow: 2px 3px 4px black;
+}
+
+
+.card > button:hover{
+    background-color: red;
+    border: 2px solid white;
+}
