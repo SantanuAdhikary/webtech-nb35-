@@ -1,0 +1,31 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.inner{
+    height: 600px;
+    width: 700px;
+    border: 2px solid red;
+
+    display: flex;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+
+    /* flex-direction: column; */
+
+      /* justify-content: center; */
+      /* align-items: center; */
+
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.inner > .box{
+    height: 80px;
+    width: 90px;
+    border: 2px solid black;
+}
