@@ -1,0 +1,105 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 80px;
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+}
+
+nav > ul{
+    display: flex;
+    gap:20px;
+}
+
+nav > ul > li{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    list-style: none;
+}
+
+main{
+    height: 250px;
+    background-color: skyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main > h1{
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    color: white;
+    text-shadow: 1px 2px 2px black;
+}
+
+main > p{
+    font-size: 19px;
+    font-style: italic;
+    letter-spacing: 1.4px;
+    color:white;
+    text-shadow: 1px 2px 2px black;
+}
+
+main > button{
+    padding: 10px 20px;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: orange;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    text-shadow: 1px 2px 2px black;
+}
+
+main > button:hover{
+    background-color: orangered;
+}
+
+section{
+    height: calc(100vh - 330px);
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section > .card{
+    height: 220px;
+    width: 320px;
+    /* border: 2px solid black; */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 3px 4px black;
+    overflow: hidden;
+}
+
+.card > img{
+    height: 55%;
+    width: 100%;
+}
+
+.card > h2{
+    text-align: center;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+}
+.card > p{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 18px;
+}
