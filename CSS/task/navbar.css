@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: brown;
+    height: 90px;
+    color:white;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav > ul{
+    display: flex;
+    /* border: 4px solid black; */
+    gap: 20px;
+}
+
+nav > ul > li{
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+nav > ul > li:hover{
+    color:black;
+}
