@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page </title>
+
+    <style>
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+         }
+
+         .outer{
+            height: 100vh;
+            background: linear-gradient(to bottom left,red,yellow);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+
+         .outer > .inner{
+            height: 80%;
+            width: 85%;
+            background: linear-gradient(skyblue,white);
+            border-radius: 20px;
+            box-shadow: 0px 5px 6px black;
+         }
+
+         .inner > nav{
+            height: 15%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* border: 2px solid black; */
+         }
+
+         .inner > nav > ul{
+            display: flex;
+            gap:20px;
+         }
+
+         nav > ul > li{
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: bold;
+            list-style: none;
+            letter-spacing: 2px;
+            color:white;
+            text-shadow: 2px 2px 1px black;
+         }
+
+         nav > h2{
+            color:brown;
+         }
+
+         nav > h2 > span{
+            font-style: italic;
+            font-size: 40px;
+            color:orangered;
+         }
+
+         nav > .right > button , .bottom > button{
+            padding: 10px 20px;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 1.3px;
+            border:none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0px 3px 4px black;
+            margin-right: 10px;
+         }
+
+         .right > button:hover{
+            transform: scale(1.05);
+         }
+
+         main{
+            height: 70%;
+            /* border: 2px solid red; */
+            display: flex;
+         }
+
+         main > .aside1{
+            background-color: white;
+            flex-basis: 50%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-left: 40px;
+            gap:10px;
+         }
+
+         main > .aside1 > p{
+            font-size: 19px;
+            text-align: justify;
+         }
+         main > .aside2{
+            background-color: white;
+            flex-basis: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+
+
+         main > .aside2 > img{
+           height: 100%;
+          
+         }
+
+         .aside1 > .bottom > input{
+            padding: 10px;
+            width: 250px;
+            border-radius: 10px;
+            border: 1px solid gray;
+         }
+
+         footer{
+            height: 15%;
+            display: flex;
+            align-items: center;
+         }
+
+         footer > .leftfooter{
+            flex-basis: 50%;
+            /* background-color: red; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+         }
+         .leftfooter > p{
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 1.3px;
+         }
+
+         footer > .rightfooter{
+            flex-basis: 50%;
+            /* background-color: green; */
+            display: flex;
+            justify-content: flex-end;
+            gap:30px;
+         }
+
+          .rightfooter > img{
+            height: 50px;
+            border-radius: 50%;
+            width: 50px;
+            box-shadow: 1px 2px 3px gray;
+         }
+
+         .rightfooter > .info{
+            margin-right: 10px;
+            font-size: 18px;
+            font-weight: bold;
+         }
+
+    </style>
+</head>
+<body>
+    
+    <div class="outer">
+         <div class="inner">
+
+            <nav>
+                <h2>my <span>App</span> </h2>
+                <ul>
+                    <li>home</li>
+                    <li>about</li>
+                    <li>contact us</li>
+                </ul>
+
+                <div class="right">
+                    <button>sign in</button>
+                    <button>join</button>
+                </div>
+            </nav>
+
+            <main>
+                 <div class="aside1">
+
+                    <h1>Host your website in less than 5 minutes</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, minus sunt sapiente laborum mollitia provident error fugiat facilis sit fuga distinctio molestias corrupti magnam? Corrupti, nesciunt ut! Aspernatur autem iure nisi voluptatibus, aut obcaecati. Nam qui magni libero omnis, ipsum nesciunt molestias nihil optio cupiditate ad voluptatum saepe sed consequuntur.</p>
+
+                    <div class="bottom">
+                        
+                        <input type="text">
+                        <button>join</button>
+                    </div>
+                    
+                 </div>
+                 <div class="aside2">
+
+                    <img src="https://media.istockphoto.com/id/1281150061/vector/register-account-submit-access-login-password-username-internet-online-website-concept.jpg?s=612x612&w=0&k=20&c=9HWSuA9IaU4o-CK6fALBS5eaO1ubnsM08EOYwgbwGBo=" alt="">
+                 </div>
+            </main>
+
+            <footer>
+                 <div class="leftfooter">
+                      <p>facebook</p>
+                      <p>instargram</p>
+                      <p>twitter</p>
+                 </div>
+
+                 <div class="rightfooter">
+                     <img src="https://static.vecteezy.com/system/resources/previews/033/132/257/non_2x/call-center-male-person-generate-ai-photo.jpg" alt="">
+
+                     <div class="info">
+                        <p>have any question ?</p>
+                        <p>talk to specialist</p>
+                     </div>
+                 </div>
+            </footer>
+
+         </div>
+    </div>
+</body>
+</html>
