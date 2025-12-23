@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    background-color: #212121;
+
+    position: fixed;
+    top:0px;
+}
+
+header{
+    height: 300px;
+    background-color: rgb(186, 50, 0);
+    text-align: center;
+    margin-top: 100px;
+}
+
+header > button{
+    padding: 20px 40px;
+    border: none;
+    background-color: rgb(47, 47, 159);
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+
+    position: fixed;
+    right: 0;
+}
+
+
+
+main{
+    height: 300px;
+    background-color: aqua;
+}
+
+main > button{
+    padding: 20px 40px;
+    border: none;
+    background-color: rgb(217, 186, 44);
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+
+    position: sticky;
+    top:150px;
+   
+}
+section{
+    height: 300px;
+    background-color: chocolate;
+}
+article{
+    height: 300px;
+    background-color: blueviolet;
+}
+aside{
+    height: 300px;
+    background-color: cornflowerblue;
+}
+
+footer{
+    height: 100px;
+    background-color: #212121;
+}
+

@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+    background: linear-gradient(to right top , red,yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer > .inner{
+    background-color: white;
+    height: 85%;
+    width: 90%;
+
+    position: relative;
+
+}
+
+.inner > #box1{
+    height: 60px;
+    width: 60px;
+    background-color: green;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+   
+}
+.inner > #box2{
+    height: 70px;
+    width: 70px;
+    background-color: pink;
+
+    position: absolute;
+    bottom: 0;
+
+    
+
+ 
+}
+.inner > #box3{
+    height: 80px;
+    width: 80px;
+    background-color: gray;
+   
+}
+.inner > #box4{
+    height: 90px;
+    width: 90px;
+    background-color: brown;
+
+    position: absolute;
+    right:0;
+    top:0;
+    
+
+   
+
+}
+.inner > #box5{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+ 
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+.inner > .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 2px black;
+}
+
+
+
+
+
+/* postition absolute will change the postion based on the nearest ancestor 
+
+for that the ancestor should have one position.
+
+*/
+
+
+
+
+.outer2{
+    margin-top: 30px;
+    width: 60%;
+    height: 500px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+
+.middle{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.inner2{
+    height: 80%;
+    width: 80%;
+   
+    background-color: yellow;
+
+    position: relative;
+
+
+}
+
+.black{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.white{
+    height: 100px;
+    width: 100px;
+    background-color: skyblue;
+}

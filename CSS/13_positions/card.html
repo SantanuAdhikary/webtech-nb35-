@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card with position</title>
+
+    <style>
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+         }
+
+         .outer{
+            height: 100vh;
+            background: linear-gradient(to right top,skyblue,white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+
+         .card{
+            width: 350px;
+            background-color: white;
+            box-shadow: 0px 10px 10px black;
+            border-radius: 15px;
+            height: 250px;
+            padding: 15px 20px;
+            position: relative;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            gap:15px;
+            align-items: center;
+         }
+
+         .card > img{
+            border-radius: 50%;
+            position: absolute;
+           left: 50%;
+           top:-75px;
+           transform: translate(-50%);
+         }
+
+         .card > h2{
+            text-transform: capitalize;
+            letter-spacing: 1.5px;
+         }
+         .card > p{
+            font-size: 18px;
+            letter-spacing: 1.5px;
+            text-transform: capitalize;
+         }
+
+         .card > button{
+            width: 80%;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: gray;
+            border: none;
+            font-size: 17px;
+            font-weight: bold;
+            color:white;
+            cursor: pointer;
+         }
+    </style>
+</head>
+<body>
+    
+    <div class="outer">
+        <div class="card">
+             <img src="https://i.pravatar.cc/150" alt="">
+             <h2>Virat Kohli</h2>
+             <p>fulltack MERN Developer</p>
+             <button>get info</button>
+        </div>
+    </div>
+</body>
+</html>
