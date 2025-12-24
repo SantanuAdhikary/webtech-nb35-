@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text animation</title>
+
+    <style>
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+           
+         }
+
+         .outer{
+            height: 100vh;
+            background: linear-gradient(to right top,black,green);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+
+         .outer > .inner{
+            height: 350px;
+            width: 480px;
+            background-color: white;
+            border-radius: 20px;
+            position: relative;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:40px;
+            padding: 0 30px;
+         }
+
+         .inner > img{
+            position: absolute;
+            left:50%;
+            border-top: 3px solid white ;
+            border-bottom: 3px solid black ;
+            border-right: 3px solid yellow ;
+            border-left: 3px solid red ;
+            border-radius: 50%;
+            top:-75px;
+            transform: translate(-50%);
+         }
+
+         .inner > h1{
+            letter-spacing: 3px;
+
+            animation: movingText 4s ease-in infinite;
+         }
+
+         .inner > p{
+            font-size: 19px;
+            font-weight: bold;
+            font-style: italic  ;
+            letter-spacing: 2px;
+         }
+
+
+         @keyframes movingText {
+            
+            0%{
+                    transform: translateY(60px);
+                    opacity: 0;
+            }
+            20%{
+                 transform: translate(0);
+                 opacity: 1;
+                }
+             80%{     
+                    transform: translate(0);
+                    opacity: 1;
+            }
+            100%{
+                     transform: translateY(-50px);
+                     opacity: 0;
+            }
+         }
+
+    </style>
+</head>
+<body>
+    
+    <div class="outer">
+        <div class="inner">
+            <img src="https://i.pravatar.cc/150" alt="">
+            <h1>Text Animation</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, possimus.</p>
+        </div>
+    </div>
+</body>
+</html>
